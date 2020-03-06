@@ -2,13 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import { domain, clientId } from '../auth_config.json'
-import { AuthPlugin } from './auth'
+import { AuthPlugin } from '@/auth'
+import { domain, clientId } from '@/auth/authConfig.json'
 
 Vue.use(AuthPlugin, {
   domain,
   clientId,
-  onRedirectCallback: (appState: any) => {
+  onRedirectCallback: (appState?: { targetUrl: string }) => {
     router.push(
       appState && appState.targetUrl
         ? appState.targetUrl
