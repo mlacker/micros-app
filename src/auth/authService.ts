@@ -91,7 +91,7 @@ export default class AuthService extends Vue {
         }
     }
     /** Authenticates the user using the redirect method */
-    loginWithRedirect(options: getIdTokenClaimsOptions) {
+    loginWithRedirect(options: RedirectLoginOptions) {
         return this.authClient.loginWithRedirect(options)
     }
     /** Returns all the claims present in the ID token */

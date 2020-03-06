@@ -22,7 +22,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: 'profile',
+    path: '/profile',
     name: 'profile',
     component: Profile,
     beforeEnter: authGuard
