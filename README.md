@@ -1,4 +1,5 @@
 # micros-app
+![Node.js CI](https://github.com/mlacker/micros-app/workflows/Node.js%20CI/badge.svg)
 
 ## Project setup
 ```
