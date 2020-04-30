@@ -4,6 +4,8 @@ import { authGuard } from '../auth/authGuard'
 
 import Home from '../views/Home.vue'
 import Profile from '../views/auth/Profile.vue'
+import FormDesignList from '../views/design/FormDesignList.vue'
+import FormDesign from '../views/design/FormDesign.vue'
 
 Vue.use(VueRouter)
 
@@ -26,6 +28,16 @@ const routes = [
     name: 'profile',
     component: Profile,
     beforeEnter: authGuard
+  },
+  {
+    path: '/form-design-list',
+    name: 'FormDesignList',
+    component: FormDesignList
+  },
+  {
+    path: '/form-design',
+    name: 'FormDesign',
+    component: FormDesign
   }
 ]
 
